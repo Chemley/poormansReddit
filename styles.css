@@ -1,0 +1,88 @@
+body {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 45px;
+  background-color: gold;
+  margin: 0 auto;
+  padding: 0;
+  color: purple;
+}
+
+header {
+  border-bottom: 2px solid aquamarine;
+}
+
+/*Styles to make the box flex*/
+
+#main {
+  display: flex;
+  flex-direction: column;
+  Justify-content: flex-start;
+}
+
+/*Styles the div and pust a border in between each section.*/
+
+.post {
+  border-bottom: 2px dashed silver;
+  padding: 0 0 5px 0;
+  display: flex;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+/*Styles the text div and gives it flex box properties.*/
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*styles the text of the post*/
+
+.title {
+  text-decoration: none;
+  padding-top 10px;
+  align-self: left;
+}
+
+/*styles for the image(thumbnail)*/
+
+.image {
+  border: 2px solid black;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 8px 5px 8px;
+}
+
+/*Styles to get the author's name and add submitted by.*/
+
+.author {
+  margin: 0 auto;
+}
+
+.author::before {
+  content: 'submitted by: ';
+}
+
+/*Styles for the side bar*/
+
+section {
+  position: absolute;
+  background-color: green;
+  border: 3px solid black;
+  padding: 100%;
+  margin-left: 75%;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 45px;
+}
