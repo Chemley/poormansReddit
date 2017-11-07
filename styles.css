@@ -24,6 +24,7 @@ header {
   display: flex;
   flex-direction: column;
   Justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 /*Styles the div and pust a border in between each section.*/
@@ -63,6 +64,7 @@ header {
   position: relative;
   overflow: hidden;
   margin: 10px 8px 5px 8px;
+  order: -1;
 }
 
 /*Styles to get the author's name and add submitted by.*/
@@ -73,6 +75,10 @@ header {
 
 .author::before {
   content: 'submitted by: ';
+}
+
+url{
+  order: 2;
 }
 
 /*Styles for the side bar*/
